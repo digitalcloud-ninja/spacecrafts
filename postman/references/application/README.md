@@ -5,11 +5,6 @@ description: Description of this page
 externalLinkIcon: false
 ---
 # Application User's Guide
-<!-- TOC -->
-**Contents**
-
-[[toc]]
-<!-- TOC -->
 
 ## About The Application
 
@@ -19,4 +14,4 @@ Here's a blank template to get started:
 <!-- HIDDEN MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!-- images -->
-[product-screenshot]: postman/.vuepress/public/images/screenshot.png
+[product-screenshot]: ../../.vuepress/public/images/screenshot.png

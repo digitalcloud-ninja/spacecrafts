@@ -3,6 +3,10 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+# Vuepress
+.cache/
+.temp/
+
 # npm & yarn locks
 package-lock.json
 yarn.lock
@@ -16,6 +20,7 @@ gradle/
 .gradle/
 gradlew
 gradlew.bat
+build/
 
 # Maven
 target/
@@ -46,8 +51,5 @@ target/
 Thumbs.db
 # Log files
 *.log
-# Ignore Gradle project-specific cache directory
-.gradle
 
-# Ignore Gradle build output directory
-build
+

@@ -4,7 +4,7 @@ title: Change Log
 description: Changes made to the application.
 ---
 
-![spacecraft.svg](./images/spacecraft-256x256.png)
+![spacecraft.svg](.vuepress/public/images/spacecraft-256x256.png)
 
 
 # Changelog

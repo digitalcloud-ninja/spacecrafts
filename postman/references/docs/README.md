@@ -9,7 +9,7 @@ externalLinkIcon: false
 
 ## Introduction
 
-![Documentation Screen Shot][docs-screenshot]
+![Documentation Screen Shot](../../.vuepress/public/images/docs-screenshot.png)
 
 ## Built With
 
@@ -144,8 +144,6 @@ of [configuration](./configuration.md) in VuePress.
 
 <!-- HIDDEN MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- images -->
-[docs-screenshot]: postman/.vuepress/public/images/docs-screenshot.png
 <!-- technologies -->
 [Git.ico]: https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white
 [Git.url]: https://git-scm.com/

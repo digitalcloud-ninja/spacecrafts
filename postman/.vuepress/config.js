@@ -1,9 +1,8 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
-import {searchPlugin} from '@vuepress/plugin-search'
-import {webpackBundler} from "@vuepress/bundler-webpack";
+// import {searchPlugin} from '@vuepress/plugin-search'
 
-const {repository} = require('../../../../package.json')
-const {name} = require('../../../../package.json')
+const {repository} = require('../../package.json')
+const {name} = require('../../package.json')
 
 export default defineUserConfig({
     lang: 'en-US',
@@ -60,7 +59,6 @@ export default defineUserConfig({
                 collapsible: false,
                 children: [
                     '/references/README.md',
-                    '/references/api/README.md',
                     '/references/application/README.md',
                     '/references/services/README.md',
                     '/references/datasources/README.md',
@@ -100,9 +98,9 @@ export default defineUserConfig({
         contributorsText: 'Contributors: ',
     }),
     plugins: [
-        searchPlugin({
-            // options
-        }),
+        // searchPlugin({
+        //     // options
+        // }),
     ],
     debug: true,
     port: 9080,
