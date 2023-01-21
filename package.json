@@ -1,0 +1,9 @@
+{
+  "name": "spacecrafts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@<url>:<workspace-id>/<repository-name>.git",
+  "author": "William Magnuson <william.magnuson@outlook.com>",
+  "license": "MIT",
+  "private": true
+}

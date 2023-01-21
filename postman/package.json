@@ -1,0 +1,20 @@
+{
+  "name": "spacecrafts-documentation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "docs:info": "vuepress info .",
+    "docs:dev": "vuepress dev .",
+    "docs:build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "2.0.0-beta.60"
+  },
+  "dependencies": {
+    "vue": "3.2.45",
+    "@vuepress/bundler-webpack": "2.0.0-beta.60",
+    "@vuepress/client": "2.0.0-beta.60",
+    "@vuepress/plugin-search": "^2.0.0-beta.60"
+  }
+}

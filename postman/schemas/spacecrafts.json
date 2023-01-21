@@ -1,0 +1,527 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "version": "1.0",
+        "title": "Spacecrafts API",
+        "description": "<img src=\"https://content.pstmn.io/ad4386b0-9f14-4bc3-bdfb-ddd90f58a92d/c3BhY2VjcmFmdC5zdmc=\" width=\"144\" height=\"157\">\n\n# Spacecrafts API\n\nThis is an example api called Spacescrafts API - Its an example from Postman's API Boilerplate Definition, and then enhanced.\n\n## Buy or rent spacecrafts",
+        "license": {
+            "name": "MIT"
+        }
+    },
+    "servers": [
+        {
+            "description": "mock",
+            "url": "https://developer.example.io/{basePath}",
+            "variables": {
+                "basePath": {
+                    "enum": [
+                        "v1",
+                        "v2"
+                    ],
+                    "default": "v1"
+                }
+            }            
+        },
+        {
+            "description": "production",
+            "url": "https://api.example.io/{basePath}",
+            "variables": {
+                "basePath": {
+                    "enum": [
+                        "v1"
+                    ],
+                    "default": "v1"
+                }
+            }            
+        }
+    ],
+    "paths": {
+        "/oauth2/token": {
+            "parameters": [
+                {
+                    "$ref": "#/components/parameters/X-Api-Key"
+                }
+            ],
+            "post": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Login",
+                "security": [
+                    {
+                        "Basic": []
+                    }
+                ],
+                "parameters": [],
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/TokenRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "200 OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Token"
+                                },
+                                "examples": {
+                                    "200": {
+                                        "$ref": "#/components/examples/TokenGranted"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/401"
+                    },
+                    "403": {
+                        "$ref": "#/components/responses/403"
+                    }
+                }
+            }
+        },
+        "/oauth2/revoke": {
+            "parameters": [
+                {
+                    "$ref": "#/components/parameters/X-Api-Key"
+                }
+            ],
+            "post": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Logout",
+                "security": [
+                    {
+                        "Authorization": []
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "access_token": {
+                                        "description": "The token to be revoked.",
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "access_token": {
+                                    "$ref": "#/components/examples/TokenRevoke"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "200 OK",
+                        "content": {}
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/401"
+                    },
+                    "403": {
+                        "$ref": "#/components/responses/403"
+                    }
+                }
+            }
+        },
+        "/spacecrafts/{spacecraftId}": {
+            "parameters": [
+                {
+                    "$ref": "#/components/parameters/X-Api-Key"
+                },
+                {
+                    "$ref": "#/components/parameters/SpacecraftId"
+                }
+            ],
+            "get": {
+                "tags": [
+                    "Spacecrafts"
+                ],
+                "summary": "Retrieve Spacecraft details by id.",
+                "security": [
+                    {
+                        "Authorization": []
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "200 OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Spacecraft"
+                                },
+                                "examples": {
+                                    "200": {
+                                        "$ref": "#/components/examples/SpacecraftWorldView4"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/401"
+                    },
+                    "403": {
+                        "$ref": "#/components/responses/403"
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/404"
+                    },
+                    "500": {
+                        "$ref": "#/components/responses/500"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "ApiKey": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "X-Api-Key"
+            },
+            "Authorization": {
+                "bearerFormat": "JWT",
+                "scheme": "bearer",
+                "type": "http"
+            },
+            "Basic": {
+                "scheme": "basic",
+                "type": "http"
+            }
+        },
+        "parameters": {
+            "X-Api-Key": {
+                "description": "Added as a part of security scheme: apiKey",
+                "name": "X-Api-Key",
+                "style": "simple",
+                "in": "header",
+                "required": true,
+                "schema": {
+                    "$ref": "#/components/schemas/X-Api-Key"
+                }
+            },
+            "SpacecraftId": {
+                "name": "spacecraftId",
+                "description": "The unique identifier of the spacecraft",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "$ref": "#/components/schemas/SpacecraftId"
+                }
+            }
+        },
+        "schemas": {
+            "X-Api-Key": {
+                "type": "string",
+                "description": "Application ApiKey",
+                "example": "00K78fbO1uO9ryr5ng6x-Fi9EugBf2m1IT5OPyduOR"
+            },
+            "Token": {
+                "type": "object",
+                "properties": {
+                    "access_token": {
+                        "description": "The Authentication token being granted.",
+                        "type": "string"
+                    },
+                    "token_type": {
+                        "description": "The type of token being granted.",
+                        "type": "string"
+                    },
+                    "scope": {
+                        "description": "Scopes associated with the token.",
+                        "type": "string"
+                    },
+                    "expires_in": {
+                        "description": "The token will expire in N seconds.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "SpacecraftId": {
+                "description": "The unique identifier of a spacecraft",
+                "type": "string"
+            },
+            "Spacecraft": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "name",
+                    "type"
+                ],
+                "properties": {
+                    "id": {
+                        "$ref": "#/components/schemas/SpacecraftId"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "capsule",
+                            "probe",
+                            "satellite",
+                            "spaceplane",
+                            "station"
+                        ]
+                    },
+                    "description": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Error": {
+                "type": "object",
+                "required": [
+                    "message"
+                ],
+                "properties": {
+                    "code": {
+                        "description": "A system error code",
+                        "type": "string"
+                    },
+                    "summary": {
+                        "description": "A short summary of the error",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "A human readable error message",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "requestBodies": {
+            "TokenRequest": {
+                "required": true,
+                "content": {
+                    "application/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "grant_type": {
+                                    "description": "Type of credentials requesting.",
+                                    "default": "client_credentials",
+                                    "type": "string"
+                                },
+                                "scope": {
+                                    "description": "The scopes (access) being requested.",
+                                    "default": "read:spacecrafts",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "grant_type",
+                                "scope"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "204": {
+                "description": "204 No Content",
+                "content": {
+                    "application/json": {
+                        "schema": {}
+                    }
+                }
+            },
+            "400": {
+                "description": "400 Bad Request",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/Error"
+                        },
+                        "examples": {
+                            "400": {
+                                "$ref": "#/components/examples/400BadRequest"
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "401 Unauthorized",
+                "headers": {
+                    "WWW_Authenticate": {
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/Error"
+                        },
+                        "examples": {
+                            "401": {
+                                "$ref": "#/components/examples/401Unauthorized"
+                            }
+                        }
+                    }
+                }
+            },
+            "403": {
+                "description": "403 Forbidden",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/Error"
+                        },
+                        "examples": {
+                            "404": {
+                                "$ref": "#/components/examples/403Forbidden"
+                            }
+                        }
+                    }
+                }
+            },
+            "404": {
+                "description": "404 Not Found",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/Error"
+                        },
+                        "examples": {
+                            "404": {
+                                "$ref": "#/components/examples/404NotFound"
+                            }
+                        }
+                    }
+                }
+            },
+            "409": {
+                "description": "409 Conflict",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/Error"
+                        },
+                        "examples": {
+                            "409": {
+                                "$ref": "#/components/examples/409Conflict"
+                            }
+                        }
+                    }
+                }
+            },
+            "500": {
+                "description": "500 Internal Server Error",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/Error"
+                        },
+                        "examples": {
+                            "500": {
+                                "$ref": "#/components/examples/500InternalServerError"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "examples": {
+            "TokenRevoke": {
+                "value": {
+                    "access_token": "eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw"
+                }
+            },
+            "TokenGranted": {
+                "value": {
+                    "access_token": "eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw",
+                    "scope": "read:spacecrafts",
+                    "token_type": "Bearer",
+                    "expires_in": 3600
+                }
+            },
+            "SpacecraftWorldView4": {
+                "value": {
+                    "id": "c0c24705-4bfd-4fe8-8a51-3537d934dbf3",
+                    "name": "WorldView 4",
+                    "type": "satellite",
+                    "description": "WorldView-4 was launched on 11 November 2016 at 18:30:33 UTC from Vandenberg Air Force Base Space Launch Complex"
+                }
+            },
+            "400BadRequest": {
+                "value": {
+                    "code": "400",
+                    "summary": "Bad Request",
+                    "message": "We can't understand your message, please fix!"
+                }
+            },
+            "401Unauthorized": {
+                "value": {
+                    "code": "401",
+                    "summary": "Unauthorized",
+                    "message": "Access denied"
+                }
+            },
+            "403Forbidden": {
+                "value": {
+                    "code": "403",
+                    "summary": "Forbidden",
+                    "message": "You don't have Clearance / Clarence!"
+                }
+            },
+            "404NotFound": {
+                "value": {
+                    "code": "404",
+                    "summary": "Not Found",
+                    "message": "The Spacecraft you ask for is Lost in Space!"
+                }
+            },
+            "409Conflict": {
+                "value": {
+                    "code": "409",
+                    "summary": "Conflict",
+                    "message": "The Satellite is out of position, and can't complete your message. Try again at a later time."
+                }
+            },
+            "500InternalServerError": {
+                "value": {
+                    "code": "500",
+                    "summary": "Internal Server Error",
+                    "message": "Houston, We have a problem!!!"
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Authentication",
+            "description": "The following endpoints, grant and revoke access to Spacecrafts",
+            "externalDocs": {
+                "url": "http://localhost:9080/docs/authentication"
+            }
+        },
+        {
+            "name": "Spacecrafts",
+            "description": "The following endpoints, manage information about Spacecrafts",
+            "externalDocs": {
+                "url": "http://localhost:9080/docs/spacecrafts"
+            }
+        }
+    ],
+    "security": [
+        {
+            "ApiKey": []
+        }
+    ]
+}
