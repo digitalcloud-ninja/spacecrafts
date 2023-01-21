@@ -1,7 +1,7 @@
 {
   "name": "spacecrafts",
   "version": "1.0.0",
-  "repository": "git@<url>:<workspace-id>/<repository-name>.git",
+  "repository": "https://github.com/digitalcloud-ninja/spacecrafts",
   "author": "William Magnuson <william.magnuson@outlook.com>",
   "license": "MIT",
   "scripts": {
