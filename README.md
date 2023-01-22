@@ -78,41 +78,52 @@ installed on your computer:
 [![gradle][gradle]][gradle.url]
 [![mavne][maven]][maven.url]
 
-## Project Definition ##
-
-    /spacecrafts
-      |
-      |-- / application  (Frontend)
-      |         |-- /package.json
-      |         |-- /build.gradle
-      |         |-- /pom.xml
-      |-- / postman  (Documentation)
-      |         |-- /package.json
-      |         |-- /build.gradle
-      |         |-- /pom.xml
-      |         |-- /schemas      (API Definition)
-      |         |-- /collections  (Postman Collections)
-      |         |-- /guides       (Developers Guide) 
-      |         |-- /references   (Application Documentation)
-      |         |-- /.vuepress    (Vuepress v2)  
-      |
-      |-- / services  (Backend Services)
-      |         |-- /package.json
-      |         |-- /build.gradle
-      |         |-- /pom.xml
-      |
-      |-- settings.gradle
-      |-- package.json
-      |-- README.md (this file)
-
 ## [Getting Started](postman/guides/GETTING-STARTED.md) ##
 ## [Introduction](postman/guides/README.md) ##
 ## [Reference Materiels](postman/references/README.md) ##
 
+## Project Definition ##
+
+    /spacecrafts
+      |
+      |-- / .run
+      |-- / .postman
+      |-- README.md (this file)                 (Project Root)
+      |-- LICENSE.md
+      |-- package.json                          
+      |-- settings.gradle
+      |-- pom.xml
+      |
+      |-- / application                         (Frontend Application)
+      |         |-- package.json
+      |         |-- build.gradle
+      |         |-- pom.xml
+      |         |------/ src
+      |
+      |-- / postman                             (Documentation)
+      |         |-- package.json
+      |         |-- build.gradle
+      |         |-- pom.xml
+      |         |-- README.MD                   (Introduction)
+      |         |-- GETTING-STARTED.MD          (Getting Started)
+      |         |------/ schemas                    (API Definition) Postman's Git Location
+      |         |------/ collections                (Collections)  Postman's Git Location
+      |         |------/ guides                     (Developers Guide) 
+      |         |------/ references                 (Application Documentation)
+      |         |------/ .vuepress                  (Vuepress v2 Configuration)  
+      |
+      |-- / services                            (Backend Services)
+                |-- package.json
+                |-- build.gradle
+                |-- pom.xml
+                |------/ src
+
+
 ## Roadmap ##
 
-* []()
-* []()
-* []()
+1. [ ] Setup oAuth2 Configuration in API Definition
+2. [ ] Dockerize
+3. [ ] Build the supporting service for "Get Spacecrafts" 
+
 
 
