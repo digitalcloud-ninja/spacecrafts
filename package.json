@@ -4,10 +4,12 @@
   "repository": "https://github.com/digitalcloud-ninja/spacecrafts",
   "author": "William Magnuson <william.magnuson@outlook.com>",
   "license": "MIT",
-  "scripts": {
-  },
+  "private": true,
+  "scripts": {},
+  "workspaces": [
+    "./*"
+  ],
   "devDependencies": {
-  },
-  "dependencies": {
+
   }
 }

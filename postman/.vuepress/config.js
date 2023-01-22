@@ -1,5 +1,5 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
-// import {searchPlugin} from '@vuepress/plugin-search'
+import {searchPlugin} from '@vuepress/plugin-search'
 
 const {repository} = require('../../package.json')
 const {name} = require('../../package.json')
@@ -7,7 +7,7 @@ const {name} = require('../../package.json')
 export default defineUserConfig({
     lang: 'en-US',
     title: 'Documentation',
-    description: 'My software developers kit.',
+    description: 'A swiss-army knife for starting your project off quickly.',
     base: '/' + name + '/',
     head: [
         ['link', {rel: 'icon', href: '/images/logo.png'}],
@@ -21,15 +21,11 @@ export default defineUserConfig({
         home: '/',
         navbar: [
             {
-                text: 'Getting Started',
-                link: '/guides/getting-started' ,
-            },
-            {
-                text: 'Guides',
+                text: 'Guide',
                 link: '/guides/',
             },
             {
-                text: 'References',
+                text: 'Reference Material',
                 link: '/references/'
             }
         ],
@@ -37,7 +33,7 @@ export default defineUserConfig({
         logoDark: './images/logo-dark.svg',
         repo: repository,
         repoLabel: 'GitHub',
-        selectLanguageText: true,
+        selectLanguageText: false,
         selectLanguageAriaLabel: '',
         selectLanguageName: 'v1.0',
         sidebar: [
@@ -45,32 +41,20 @@ export default defineUserConfig({
                 text: 'Guides',
                 collapsible: false,
                 children: [
-                    '/guides/GETTING-STARTED.md',
                     '/guides/README.md',
-                    '/guides/ADDITIONAL-RESOURCES.md',
-                    {
-                        text: "Markdown Cheat-Sheet",
-                        link: 'https://www.markdownguide.org/cheat-sheet/',
-                    }
+                    '/guides/GETTING-STARTED.md'
                 ],
             },
             {
-                text: 'References',
+                text: 'Reference',
                 collapsible: false,
                 children: [
                     '/references/README.md',
                     '/references/application/README.md',
                     '/references/services/README.md',
                     '/references/datasources/README.md',
-                    {
-                        text: 'Documents',
-                        link: '/references/docs/README.md',
-                        collapsible: false,
-                        children: [
-                            '/references/docs/CONFIGURATION.md'
-                        ]
-                    },
-                    '/references/GLOSSARY.md'
+                    '/references/GLOSSARY.md',
+                    '/references/ADDITIONAL-RESOURCES.md'
                 ],
             },
             {
@@ -98,9 +82,10 @@ export default defineUserConfig({
         contributorsText: 'Contributors: ',
     }),
     plugins: [
-        // searchPlugin({
-        //     // options
-        // }),
+        searchPlugin({
+            // exclude the homepage
+            isSearchable: (page) => page.path !== '/',
+        }),
     ],
     debug: true,
     port: 9080,

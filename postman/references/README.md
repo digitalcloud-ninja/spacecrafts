@@ -5,15 +5,18 @@ title: SpaceCrafts v1.0.0
 description:
 externalLinkIcon: false
 ---
-
+<!-- Badge Items -->
+[postman.api]: https://app.getpostman.com/run-collection/25171436-a9adbca1-1fd8-4e68-98f6-8bf6fecfe4b1?action=collection%2Ffork&collection-url=entityId%3D25171436-a9adbca1-1fd8-4e68-98f6-8bf6fecfe4b1%26entityType%3Dcollection%26workspaceId%3D7e28d2b2-9c51-4cf4-a71e-74c026e0ec83
 ![spacecraft-256x256.png](../.vuepress/public/images/spacecraft-256x256.png)
-
 
 # SpaceCrafts v1.0.0 #
 
 This is an example from Postman's API Boilerplate Definition called SpacesCrafts.Similar to Swagger's petstore example.
 
 <h3>Buy or rent spacecrafts with us!</h3>
+
+[![Run in Postman](https://run.pstmn.io/button.svg)][postman.api]
+
 
 ## Introduction ##
 
@@ -34,12 +37,6 @@ This is an example from Postman's API Boilerplate Definition called SpacesCrafts
 
 - Snippets of the key sections of the definition for easy reviewing in GitHub or BitBucket repositories.
 - Any **"Tips & Tricks"** that need to be pointed out to other users.
-
-<h3>Dependencies:</h3>
-
-[![OpenAPI 3.1.0][openapi]][openapi.url]
-[![OpenAPI 3.0.3][swagger]][swagger.url]
-[![Postman][postman]][postman.url]
 
 <h3>Roadmap:</h3>
 
@@ -62,7 +59,7 @@ Setup 2 servers by default:
 
 **Mock:** &rarr; Prototyping an endpoint before building it, is just "standard" these days.
 
- &darr; add additional environments (optional)
+&darr; add additional environments (optional)
 
 **Production:** &larr; Where this will live when done.
 :::
@@ -401,10 +398,13 @@ Endpoints provide access to your Application's functionality, we use this sectio
 ```
 
 ## Components ##
+
 The following components are defined in the OpenAPI Specification.
+
 ### Parameters ###
 
 #### X-Api-Key ####
+
 ```json
 {
   "components": {
@@ -423,7 +423,9 @@ The following components are defined in the OpenAPI Specification.
   }
 }
 ```
+
 #### SpacecraftId ####
+
 ```json
 {
   "components": {
@@ -445,6 +447,7 @@ The following components are defined in the OpenAPI Specification.
 ### Schemas ###
 
 #### X-Api-Key ####
+
 ```json
 {
   "components": {
@@ -454,11 +457,13 @@ The following components are defined in the OpenAPI Specification.
         "description": "Application ApiKey",
         "example": "00K78fbO1uO9ryr5ng6x-Fi9EugBf2m1IT5OPyduOR"
       }
-    }    
+    }
   }
 }
 ```
+
 #### Token ####
+
 ```json
 {
   "components": {
@@ -484,11 +489,13 @@ The following components are defined in the OpenAPI Specification.
           }
         }
       }
-    }    
+    }
   }
 }
 ```
+
 #### SpacecraftId ####
+
 ```json
 {
   "components": {
@@ -497,12 +504,13 @@ The following components are defined in the OpenAPI Specification.
         "description": "The unique identifier of a spacecraft",
         "type": "string"
       }
-    }    
+    }
   }
 }
 ```
 
 #### Spacecraft ####
+
 ```json
 {
   "components": {
@@ -542,6 +550,7 @@ The following components are defined in the OpenAPI Specification.
 ```
 
 #### Error ####
+
 ```json
 {
   "components": {
@@ -566,7 +575,7 @@ The following components are defined in the OpenAPI Specification.
           }
         }
       }
-    }    
+    }
   }
 }
 
@@ -574,8 +583,8 @@ The following components are defined in the OpenAPI Specification.
 
 ### RequestBodies ###
 
-
 #### Token Request ####
+
 ```json
 {
   "components": {
@@ -606,7 +615,7 @@ The following components are defined in the OpenAPI Specification.
           }
         }
       }
-    }    
+    }
   }
 }
 
@@ -615,6 +624,7 @@ The following components are defined in the OpenAPI Specification.
 ### Responses ###
 
 #### 204 No Content ####
+
 ```json
 {
   "components": {
@@ -633,6 +643,7 @@ The following components are defined in the OpenAPI Specification.
 ```
 
 #### 400 Bad Request ####
+
 ```json
 {
   "components": {
@@ -658,6 +669,7 @@ The following components are defined in the OpenAPI Specification.
 ```
 
 #### 401 Unauthorized ####
+
 ```json
 {
   "components": {
@@ -690,6 +702,7 @@ The following components are defined in the OpenAPI Specification.
 ```
 
 #### 403 Forbidden ####
+
 ```json
 {
   "components": {
@@ -715,6 +728,7 @@ The following components are defined in the OpenAPI Specification.
 ```
 
 #### 404 Not Found ####
+
 ```json
 {
   "components": {
@@ -740,6 +754,7 @@ The following components are defined in the OpenAPI Specification.
 ```
 
 #### 409 Not Conflict ####
+
 ```json
 {
   "components": {
@@ -765,6 +780,7 @@ The following components are defined in the OpenAPI Specification.
 ```
 
 #### 500 Internal Server Error ####
+
 ```json
 {
   "components": {
@@ -791,6 +807,7 @@ The following components are defined in the OpenAPI Specification.
 ```
 
 ### Examples ###
+
 ```json
 {
   "components": {
@@ -858,15 +875,8 @@ The following components are defined in the OpenAPI Specification.
           "message": "Houston, We have a problem!!!"
         }
       }
-    }    
+    }
   }
 }
 
 ```
-<!-- Hidden Items -->
-[swagger]: https://img.shields.io/badge/swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=black
-[swagger.url]: https://swagger.io/specification/
-[openapi]: https://img.shields.io/badge/openapi-6BA539?style=for-the-badge&logo=openapiinitiative&logoColor=white
-[openapi.url]: https://spec.openapis.org/oas/latest.html
-[postman]: https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white
-[postman.url]: https://www.postman.com/

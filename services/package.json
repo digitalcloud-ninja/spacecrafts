@@ -1,5 +1,5 @@
 {
-  "name": "service",
+  "name": "spacecrafts-services",
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",

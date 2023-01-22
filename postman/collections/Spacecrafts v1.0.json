@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "223e2b47-3100-4316-b9c4-821227dd08ef",
-		"name": "Spacecrafts API v1.0.0",
+		"_postman_id": "89031ee3-9d2e-4548-ae14-175784d3546a",
+		"name": "Spacecrafts v1.0",
 		"description": "<img src=\"https://content.pstmn.io/ad4386b0-9f14-4bc3-bdfb-ddd90f58a92d/c3BhY2VjcmFmdC5zdmc=\" width=\"144\" height=\"157\">\n\n# Spacecrafts API\n\nThis is an example api called Spacescrafts API - Its an example from Postman's API Boilerplate Definition, and then enhanced.\n\n## Buy or rent spacecrafts",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "23966849-223e2b47-3100-4316-b9c4-821227dd08ef"
+		"_exporter_id": "25171436"
 	},
 	"item": [
 		{
@@ -12,10 +12,6 @@
 			"item": [
 				{
 					"name": "Login",
-					"id": "c18cfd4d-b983-4ec4-8ce3-9a633016f6ec",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -83,7 +79,6 @@
 					},
 					"response": [
 						{
-							"id": "a88501f2-0aba-45ec-b4bf-427773a39e32",
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "POST",
@@ -127,10 +122,9 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\",\n  \"scope\": \"read:spacecrafts\",\n  \"token_type\": \"Bearer\",\n  \"expires_in\": 3600\n}"
+							"body": "{\n\t\"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\",\n\t\"scope\": \"read:spacecrafts\",\n\t\"token_type\": \"Bearer\",\n\t\"expires_in\": 3600\n}"
 						},
 						{
-							"id": "49da6f09-2ce6-481e-bd74-4e8d0097161d",
 							"name": "401 Unauthorized",
 							"originalRequest": {
 								"method": "POST",
@@ -169,9 +163,8 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"disabled": false,
 									"key": "WWW_Authenticate",
-									"value": "Ut aliquip amet",
+									"value": "consequat nisi ullamco aliqua",
 									"description": ""
 								},
 								{
@@ -180,10 +173,9 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"code\": \"401\",\n  \"summary\": \"Unauthorized\",\n  \"message\": \"Access denied\"\n}"
+							"body": "{\n\t\"code\": \"401\",\n\t\"summary\": \"Unauthorized\",\n\t\"message\": \"Access denied\"\n}"
 						},
 						{
-							"id": "18b059db-377b-4eb4-9f04-c55f06e9257a",
 							"name": "403 Forbidden",
 							"originalRequest": {
 								"method": "POST",
@@ -227,16 +219,12 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"code\": \"403\",\n  \"summary\": \"Forbidden\",\n  \"message\": \"You don't have Clearance / Clarence!\"\n}"
+							"body": "{\n\t\"code\": \"403\",\n\t\"summary\": \"Forbidden\",\n\t\"message\": \"You don't have Clearance / Clarence!\"\n}"
 						}
 					]
 				},
 				{
 					"name": "Logout",
-					"id": "93ce6d4c-0c48-4a86-bd17-2ea84afb6aaa",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -266,7 +254,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\"\n}",
+							"raw": "{\n\t\"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -293,7 +281,6 @@
 					},
 					"response": [
 						{
-							"id": "c0c2b11b-adaf-4fb7-aef8-b7ef204dcf1a",
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "POST",
@@ -311,7 +298,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\"\n}",
+									"raw": "{\n\t\"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -349,7 +336,6 @@
 							"body": ""
 						},
 						{
-							"id": "7e777bc9-6bfd-49d6-aa99-468ed04f3c45",
 							"name": "401 Unauthorized",
 							"originalRequest": {
 								"method": "POST",
@@ -367,7 +353,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\"\n}",
+									"raw": "{\n\t\"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -397,9 +383,8 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"disabled": false,
 									"key": "WWW_Authenticate",
-									"value": "Ut aliquip amet",
+									"value": "consequat nisi ullamco aliqua",
 									"description": ""
 								},
 								{
@@ -408,10 +393,9 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"code\": \"401\",\n  \"summary\": \"Unauthorized\",\n  \"message\": \"Access denied\"\n}"
+							"body": "{\n\t\"code\": \"401\",\n\t\"summary\": \"Unauthorized\",\n\t\"message\": \"Access denied\"\n}"
 						},
 						{
-							"id": "b5bc5551-e38b-4e26-bef7-bae403c8bd80",
 							"name": "403 Forbidden",
 							"originalRequest": {
 								"method": "POST",
@@ -429,7 +413,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\"\n}",
+									"raw": "{\n\t\"access_token\": \"eyJraWQiOiIyeFFFVkNVbERkNzdBSXZHaTcyS1lobkI1V0J3UFVpM29ISEJkY0RhY0VBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNOdDZhZFdFOFl4ZlowTWg3MWYzQ0lVU0Z6a2RrSmc3TU1YYkdTU1o3b0EiLCJpc3MiOiJodHRwczovL3NhbWJhc2FmZXR5LWRlbW8ub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY2MzEyMzI1LCJleHAiOjE2NjYzMTU5MjUsImNpZCI6IjBvYW1rc2t6eHNoTU1Vcm5zMzU3Iiwic2NwIjpbIkFQSSJdLCJzdWIiOiIwb2Fta3NrenhzaE1NVXJuczM1NyIsIm5hbWUiOiJhcGkiLCJncm91cHMiOlsicmVzX2xpY2Vuc2VfbnVtYmVyX3NlYXJjaCJdLCJhY2Nlc3NDdXN0b21lcklkIjoxOTQsInFhbiI6IlE3NjkyNjIzODkifQ.MAjDBfVM-aw3zKlx8BJ8tWkfmSseon7uTE_Ws2Dq0iwjZf05DkEjELTKBKxJ1h3J1TAdinf5Jre5hOb5EUP-6h0WveU6vmRlgSeJekR86GCZ2t-V67QdJmkT8WrYBWPV_1JObwylyr1wh0RJ3Z050CrpgbMbreiUCiZegsN64NxcKANB1LMzcjT3Zw6OAmlNA6nJhEuWpI_qDN4OeXYsMhnzgJ090TvaLK_fF7Vf_XjJUYCI_mw3xyq55fqq8f3LiZdQ_Hn18ZJd0L-U4UtlOU0F9pyRpZXT-nC4cKaJ0LoddgINlB7jXnj6Ftj8Sl8TFpNqovxqbXazVq64VkMSVw\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -464,12 +448,11 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"code\": \"403\",\n  \"summary\": \"Forbidden\",\n  \"message\": \"You don't have Clearance / Clarence!\"\n}"
+							"body": "{\n\t\"code\": \"403\",\n\t\"summary\": \"Forbidden\",\n\t\"message\": \"You don't have Clearance / Clarence!\"\n}"
 						}
 					]
 				}
 			],
-			"id": "47bd196a-ef0f-49f7-a797-6fd0c4e3fe8a",
 			"description": "The following endpoints, grant and revoke access to Spacecrafts"
 		},
 		{
@@ -477,10 +460,6 @@
 			"item": [
 				{
 					"name": "Retrieve Spacecraft details by id.",
-					"id": "05c4f581-77df-43f6-9497-6e33761ed4f9",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -516,7 +495,7 @@
 							"variable": [
 								{
 									"key": "spacecraftId",
-									"value": "non in nisi",
+									"value": "veniam tempor ipsum",
 									"description": "(Required) The unique identifier of the spacecraft"
 								},
 								{
@@ -529,7 +508,6 @@
 					},
 					"response": [
 						{
-							"id": "799dcef4-42ba-4f09-8b65-99b170cfbedc",
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
@@ -557,7 +535,7 @@
 									"variable": [
 										{
 											"key": "spacecraftId",
-											"value": "non in nisi",
+											"value": "veniam tempor ipsum",
 											"description": "(Required) The unique identifier of the spacecraft"
 										},
 										{
@@ -578,10 +556,9 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": \"c0c24705-4bfd-4fe8-8a51-3537d934dbf3\",\n  \"name\": \"WorldView 4\",\n  \"type\": \"satellite\",\n  \"description\": \"WorldView-4 was launched on 11 November 2016 at 18:30:33 UTC from Vandenberg Air Force Base Space Launch Complex\"\n}"
+							"body": "{\n\t\"id\": \"c0c24705-4bfd-4fe8-8a51-3537d934dbf3\",\n\t\"name\": \"WorldView 4\",\n\t\"type\": \"satellite\",\n\t\"description\": \"WorldView-4 was launched on 11 November 2016 at 18:30:33 UTC from Vandenberg Air Force Base Space Launch Complex\"\n}"
 						},
 						{
-							"id": "2966ab46-0f9a-41b6-a004-3676e5bb3f10",
 							"name": "401 Unauthorized",
 							"originalRequest": {
 								"method": "GET",
@@ -609,7 +586,7 @@
 									"variable": [
 										{
 											"key": "spacecraftId",
-											"value": "non in nisi",
+											"value": "veniam tempor ipsum",
 											"description": "(Required) The unique identifier of the spacecraft"
 										},
 										{
@@ -625,9 +602,8 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"disabled": false,
 									"key": "WWW_Authenticate",
-									"value": "Ut aliquip amet",
+									"value": "consequat nisi ullamco aliqua",
 									"description": ""
 								},
 								{
@@ -636,10 +612,9 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"code\": \"401\",\n  \"summary\": \"Unauthorized\",\n  \"message\": \"Access denied\"\n}"
+							"body": "{\n\t\"code\": \"401\",\n\t\"summary\": \"Unauthorized\",\n\t\"message\": \"Access denied\"\n}"
 						},
 						{
-							"id": "26947265-318f-46cb-8bae-df6c3480ef75",
 							"name": "403 Forbidden",
 							"originalRequest": {
 								"method": "GET",
@@ -667,7 +642,7 @@
 									"variable": [
 										{
 											"key": "spacecraftId",
-											"value": "non in nisi",
+											"value": "veniam tempor ipsum",
 											"description": "(Required) The unique identifier of the spacecraft"
 										},
 										{
@@ -688,10 +663,9 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"code\": \"403\",\n  \"summary\": \"Forbidden\",\n  \"message\": \"You don't have Clearance / Clarence!\"\n}"
+							"body": "{\n\t\"code\": \"403\",\n\t\"summary\": \"Forbidden\",\n\t\"message\": \"You don't have Clearance / Clarence!\"\n}"
 						},
 						{
-							"id": "97b5eb78-5761-4302-b641-44597dc79457",
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "GET",
@@ -719,7 +693,7 @@
 									"variable": [
 										{
 											"key": "spacecraftId",
-											"value": "non in nisi",
+											"value": "veniam tempor ipsum",
 											"description": "(Required) The unique identifier of the spacecraft"
 										},
 										{
@@ -740,10 +714,9 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"code\": \"404\",\n  \"summary\": \"Not Found\",\n  \"message\": \"The Spacecraft you ask for is Lost in Space!\"\n}"
+							"body": "{\n\t\"code\": \"404\",\n\t\"summary\": \"Not Found\",\n\t\"message\": \"The Spacecraft you ask for is Lost in Space!\"\n}"
 						},
 						{
-							"id": "7e700b1f-21ee-437c-b452-f5b80b976b13",
 							"name": "500 Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -771,7 +744,7 @@
 									"variable": [
 										{
 											"key": "spacecraftId",
-											"value": "non in nisi",
+											"value": "veniam tempor ipsum",
 											"description": "(Required) The unique identifier of the spacecraft"
 										},
 										{
@@ -792,12 +765,11 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"code\": \"500\",\n  \"summary\": \"Internal Server Error\",\n  \"message\": \"Houston, We have a problem!!!\"\n}"
+							"body": "{\n\t\"code\": \"500\",\n\t\"summary\": \"Internal Server Error\",\n\t\"message\": \"Houston, We have a problem!!!\"\n}"
 						}
 					]
 				}
 			],
-			"id": "59d57052-6e7e-4b3f-9379-424dd1ac1db1",
 			"description": "The following endpoints, manage information about Spacecrafts"
 		}
 	],
@@ -823,17 +795,11 @@
 	},
 	"variable": [
 		{
-			"id": "8cc9fd92-ec47-4802-82a2-72d947cc2e54",
 			"key": "basePath",
 			"value": "v1",
-			"type": "any",
-			"description": {
-				"content": " (This can only be one of v1,v2)",
-				"type": "text/plain"
-			}
+			"type": "any"
 		},
 		{
-			"id": "2eacffff-6918-41ce-b523-3a7480988ea3",
 			"key": "baseUrl",
 			"value": "https://developer.example.io/{{basePath}}",
 			"type": "string"

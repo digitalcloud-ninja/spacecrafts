@@ -1,5 +1,5 @@
 {
-  "name": "spacecrafts-documentation",
+  "name": "spacecrafts-reference",
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
@@ -9,9 +9,10 @@
     "docs:build": "vuepress build ../postman"
   },
   "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.60",
+    "@vuepress/client": "2.0.0-beta.60",
     "vue": "3.2.45",
-    "vuepress": "2.0.0-beta.60",
-    "@vuepress/client": "2.0.0-beta.60"
+    "vuepress": "2.0.0-beta.60"
   },
   "dependencies": {
   }
