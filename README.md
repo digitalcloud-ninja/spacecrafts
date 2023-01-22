@@ -57,7 +57,7 @@ _&uarr; ChatGPT_
 
 ## Dependencies ##
 
-Before installing spacecrafts, a familiarity with the command line, and the following must be
+Before installing, a familiarity with the command line, and the following must be
 installed on your computer:
 
 [![Git][Git.ico]][Git.url]
