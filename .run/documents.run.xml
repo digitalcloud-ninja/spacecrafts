@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="documents" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/postman/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="docs:run" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,5 +1,5 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
-import {searchPlugin} from '@vuepress/plugin-search'
+//import {searchPlugin} from '@vuepress/plugin-search'
 
 const {repository} = require('../../package.json')
 const {name} = require('../../package.json')
@@ -70,7 +70,7 @@ export default defineUserConfig({
             }
         ],
         sidebarDepth: 3,
-        editLink: true,
+        editLink: false,
         editLinkText: 'Edit this page on GitHub: ',
         docsRepo: repository,
         docsBranch: 'master',
@@ -82,10 +82,10 @@ export default defineUserConfig({
         contributorsText: 'Contributors: ',
     }),
     plugins: [
-        searchPlugin({
-            // exclude the homepage
-            isSearchable: (page) => page.path !== '/',
-        }),
+        // searchPlugin({
+        //     // exclude the homepage
+        //     isSearchable: (page) => page.path !== '/',
+        // }),
     ],
     debug: true,
     port: 9080,

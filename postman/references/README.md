@@ -11,27 +11,12 @@ externalLinkIcon: false
 
 # SpaceCrafts v1.0.0 #
 
-This is an example from Postman's API Boilerplate Definition called SpacesCrafts.Similar to Swagger's petstore example.
-
 <h3>Buy or rent spacecrafts with us!</h3>
 
-[![Run in Postman](https://run.pstmn.io/button.svg)][postman.api]
-
-
 ## Introduction ##
+This is an example from Postman's API Boilerplate Definition called SpacesCrafts.Similar to Swagger's petstore example.
 
-**Why was this created?**
-
-- **Tutorial / Educational**: This started as a research effort on Postman Enterprise, .git integrations and building
-  a developer portal.
-- **Template for a Software Developer's Kit**: Being "Agile" and having an SDK allows for quick prototyping of concepts,
-  while maintaining "high-quality" code.
-    - _**Consistency:**_ Setting up a project correctly from the start, can be tedious and when you're just prototyping
-      it's not usually worth the effort for something being thrown away. However, this is a crucial effort of any
-      project. Having an SDK solves this, by establishing a "Contract" for a project.
-    - _**Best Practices:**_ Establish some "Conventions" or standards for development.
-    - _**Ease of Use:**_ It's gotta be easy, or no one will use it. (K.I.S.S)
-- **Lead by Example:** Showing an example of documenting code.
+[![Run in Postman](https://run.pstmn.io/button.svg)][postman.api]
 
 **What should be documented here?**
 
