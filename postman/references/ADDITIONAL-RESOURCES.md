@@ -173,6 +173,7 @@ compiling computer source code into binary code, packaging binary code, and runn
 
 - [Image Shields](https://img.shields.io)
 - [Simple Icons](https://simpleicons.org/)
+  - [Simple Icons Names](https://github.com/simple-icons/simple-icons/blob/develop/slugs.md)
 
 <!-- HIDDEN MARKDOWN LINKS & IMAGES -->
 <!-- images -->

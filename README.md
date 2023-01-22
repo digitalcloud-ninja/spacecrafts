@@ -15,6 +15,10 @@
 [openapi.url]: https://spec.openapis.org/oas/latest.html
 [postman]: https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white
 [postman.url]: https://www.postman.com/
+[gradle]: https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white
+[gradle.url]: https://gradle.org/
+[maven]: https://img.shields.io/badge/maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white
+[maven.url]: https://gradle.org/
 
 # SpaceCrafts API #
 
@@ -39,12 +43,16 @@ _&uarr; ChatGPT_
   a software developers kit for a new agile development project.
 
 <h3>Table of Contents</h3>
+
 <!-- TOC -->
 * [SpaceCrafts API](#spacecrafts-api)
   * [Introduction](#introduction)
   * [Dependencies](#dependencies)
   * [Project Definition](#project-definition)
-  * [Acknowledgements](#acknowledgements)
+  * [Getting Started](#getting-started)
+  * [Introduction](#introduction-1)
+  * [Reference Materiels](#reference-materiels)
+  * [Roadmap](#roadmap)
 <!-- TOC -->
 
 ## Dependencies ##
@@ -62,26 +70,44 @@ installed on your computer:
 
 **Your preferred OpenAPI Editor:**
 
-[![OpenAPI 3.1.0][openapi]][openapi.url]
-[![OpenAPI 3.0.3][swagger]][swagger.url]
 [![Postman][postman]][postman.url]
+[![OpenAPI 3.0.3][swagger]][swagger.url]
+
+**Your preferred build tool:**
+
+[![gradle][gradle]][gradle.url]
+[![mavne][maven]][maven.url]
 
 ## Project Definition ##
 
     /spacecrafts
-       |
-       |-- /.postman  -> cloud settings
-       |-- / postman  
-       |         |-- /schemas
-       |         |-- /collections 
-       |
-       |-- build.gradle
-       |-- package.json
-       |-- README.md (this file)
+      |
+      |-- / application  (Frontend)
+      |         |-- /package.json
+      |         |-- /build.gradle
+      |         |-- /pom.xml
+      |-- / postman  (Documentation)
+      |         |-- /package.json
+      |         |-- /build.gradle
+      |         |-- /pom.xml
+      |         |-- /schemas      (API Definition)
+      |         |-- /collections  (Postman Collections)
+      |         |-- /guides       (Developers Guide) 
+      |         |-- /references   (Application Documentation)
+      |         |-- /.vuepress    (Vuepress v2)  
+      |
+      |-- / services  (Backend Services)
+      |         |-- /package.json
+      |         |-- /build.gradle
+      |         |-- /pom.xml
+      |
+      |-- settings.gradle
+      |-- package.json
+      |-- README.md (this file)
 
-## Build With: ##
-
-Gradle 
+## [Getting Started](postman/guides/GETTING-STARTED.md) ##
+## [Introduction](postman/guides/README.md) ##
+## [Reference Materiels](postman/references/README.md) ##
 
 ## Roadmap ##
 
@@ -89,4 +115,4 @@ Gradle
 * []()
 * []()
 
-## Acknowledgements ##
+
