@@ -106,11 +106,11 @@ installed on your computer:
       |         |-- pom.xml
       |         |-- README.MD                   (Introduction)
       |         |-- GETTING-STARTED.MD          (Getting Started)
-      |         |------/ schemas                    (API Definition) Postman's Git Location
-      |         |------/ collections                (Collections)  Postman's Git Location
+      |         |------/ schemas                    (OpenAPI Definition) Postman's Default Location
+      |         |------/ collections                (Collections)  Postman's Default Location
       |         |------/ guides                     (Developers Guide) 
-      |         |------/ references                 (Application Documentation)
-      |         |------/ .vuepress                  (Vuepress v2 Configuration)  
+      |         |------/ references                 (Reference Materials)
+      |         |------/ .vuepress                  (Vuepress v2 Configuration & Images)  
       |
       |-- / services                            (Backend Services)
                 |-- package.json
