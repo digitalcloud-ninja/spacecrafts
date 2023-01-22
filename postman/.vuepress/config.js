@@ -41,20 +41,20 @@ export default defineUserConfig({
                 text: 'Guides',
                 collapsible: false,
                 children: [
-                    '/guides/README.md',
-                    '/guides/GETTING-STARTED.md'
+                    '/guides/GETTING-STARTED.md',
+                    '/guides/README.md'
                 ],
             },
             {
-                text: 'Reference',
+                text: 'Reference Materials',
                 collapsible: false,
                 children: [
                     '/references/README.md',
                     '/references/application/README.md',
                     '/references/services/README.md',
-                    '/references/datasources/README.md',
-                    '/references/GLOSSARY.md',
-                    '/references/ADDITIONAL-RESOURCES.md'
+                    '/references/ADDITIONAL-RESOURCES.md',
+                    '/references/GLOSSARY.md'
+
                 ],
             },
             {

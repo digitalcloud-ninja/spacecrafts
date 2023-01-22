@@ -13,6 +13,8 @@ take advantage of the powerful functionality our software has to offer. With det
 technical support, you'll be able to get up and running in no time. We can't wait to see what you'll create with our
 SDK!
 
+_ChatGPT_
+
 - The **API Specification** provides a detailed description of the application's API endpoints and their inputs
   and outputs.
 
@@ -31,18 +33,10 @@ SDK!
 
 **Why was this created?**
 
-- **Tutorial / Educational**: This started as a research effort on Postman Enterprise, .git integrations and building
-  a developer portal.
-- **Template for a Software Developer's Kit**: Being "Agile" and having an SDK allows for quick prototyping of concepts,
-  while maintaining "high-quality" code.
-  - _**Consistency:**_ Setting up a project correctly from the start, can be tedious and when you're just prototyping
-    it's not usually worth the effort for something being thrown away. However, this is a crucial effort of any
-    project. Having an SDK solves this, by establishing a "Contract" for a project.
-  - _**Best Practices:**_ Establish some "Conventions" or standards for development.
-  - _**Ease of Use:**_ It's gotta be easy, or no one will use it. (K.I.S.S)
-- **Lead by Example:** Showing an example of documenting code.
+- **Tutorial / Educational**: This started as a research effort on Postman Enterprise, .GitHub integrations and building
+  a software developers kit for an enterprise team.
 
-# MIT License
+<h3>MIT License</h3>
 
 Copyright (c) 2020-present Magnuson William
 
