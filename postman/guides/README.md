@@ -32,10 +32,6 @@ _ChatGPT_
 - The [**Release Notes**](../CHANGELOG.md) provides information on the latest updates and changes to the application.
   This document is intended for developers, administrators, and users of the application.
 
-**Why was this created?**
-
-- **Tutorial / Educational**: This started as a research effort on Postman Enterprise, GitHub integrations and building
-  a software developers kit for an enterprise team.
 
 <h3>MIT License</h3>
 
