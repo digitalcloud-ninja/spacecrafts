@@ -1,7 +1,8 @@
 ---
 lang: en-US
 title: Introduction
-description: Guides for the application.
+description: A summary of the application documentation.
+sidebarDepth: 2
 externalLinkIcon: false
 ---
 
@@ -15,25 +16,25 @@ SDK!
 
 _ChatGPT_
 
-- The **API Specification** provides a detailed description of the application's API endpoints and their inputs
-  and outputs.
+- The [**API Specification**](../schemas) provides a detailed description of the application's API endpoints and their
+  inputs and outputs.
 
-- The **Application Users Guide** provides instructions on how to use the sample applications, including features and
-  functionality.
+- The [**Application Users Guide**](../references/application/README.md) provides instructions on how to use the sample
+  applications, including features and functionality.
 
-- The **Services Reference** provides instructions on how to use the sample application's microservices backend. including
-  features and functionality.
+- The [**Services Reference**](../references/services/README.md) provides instructions on how to use the sample
+  application's microservices backend including features and functionality.
 
-- The **Additional Resources** contains additional informational public resources.
+- The [**Additional Resources**](../references/ADDITIONAL-RESOURCES.md) contains additional informational public resources.
 
-- The **Glossary** contains definitions for technical terms used in the document.
+- The [**Glossary**](../references/GLOSSARY.md) contains definitions for technical terms used in the document.
 
-- The **Release Notes** provides information on the latest updates and changes to the application.
+- The [**Release Notes**](../CHANGELOG.md) provides information on the latest updates and changes to the application.
   This document is intended for developers, administrators, and users of the application.
 
 **Why was this created?**
 
-- **Tutorial / Educational**: This started as a research effort on Postman Enterprise, .GitHub integrations and building
+- **Tutorial / Educational**: This started as a research effort on Postman Enterprise, GitHub integrations and building
   a software developers kit for an enterprise team.
 
 <h3>MIT License</h3>
@@ -52,7 +53,7 @@ copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE

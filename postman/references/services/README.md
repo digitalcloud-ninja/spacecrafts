@@ -1,7 +1,9 @@
 ---
 lang: en-US
 title: Services Reference
-description: Service Documentation, document each service created for the application.
+description: Service Documentation, document each service for the application.
+sidebarDepth: 2
+externalLinkIcon: false
 ---
 
 # Services References

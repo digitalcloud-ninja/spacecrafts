@@ -3,6 +3,7 @@ lang: en-US
 title: Additional Resources
 description: A collection of helpful development resources.
 sidebarDepth: 2
+externalLinkIcon: true
 ---
 
 # Additional Resources

@@ -1,7 +1,8 @@
 ---
 lang: en-US
 title: Application User's Guide
-description: Description of this page
+description: The application's user guide.
+sidebarDepth: 2
 externalLinkIcon: false
 ---
 # Application User's Guide

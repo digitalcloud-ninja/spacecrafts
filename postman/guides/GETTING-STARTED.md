@@ -2,6 +2,7 @@
 lang: en-US
 title: Getting Started
 description: How to use this toolkit.
+sidebarDepth: 2
 externalLinkIcon: false
 ---
 <!-- HIDDEN MARKDOWN LINKS & IMAGES -->
@@ -26,7 +27,7 @@ externalLinkIcon: false
 
 # Getting Started #
 
-::: tip Prerequisites
+## Prerequisites
 
 Before installing spacecrafts, a familiarity with the command line, and the following must be
 installed on your computer:
@@ -48,8 +49,6 @@ installed on your computer:
 
 [![gradle][gradle]][gradle.url]
 [![maven][maven]][maven.url]
-
-:::
 
 # Quick Start
 
