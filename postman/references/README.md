@@ -1,9 +1,8 @@
 ---
-sidebarDepth: 3
 lang: en-US
 title: SpaceCrafts v1.0.0
 description: Reference Material
-sidebarDepth: 2
+sidebarDepth: 3
 externalLinkIcon: false
 ---
 <!-- Badge Items -->
