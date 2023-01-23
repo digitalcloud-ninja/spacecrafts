@@ -1,13 +1,15 @@
 ---
-sidebarDepth: 2
 lang: en-US
 title: Additional Resources
 description: A collection of helpful development resources.
+sidebarDepth: 2
 ---
 
 # Additional Resources
 
 A collection of resources that provide quick reference to common developer tools and references.
+
+[The Markdown Guide](https://www.markdownguide.org)!
 
 ## API Specifications & Tools
 
@@ -176,36 +178,8 @@ compiling computer source code into binary code, packaging binary code, and runn
   - [Simple Icons Names](https://github.com/simple-icons/simple-icons/blob/develop/slugs.md)
 
 <!-- HIDDEN MARKDOWN LINKS & IMAGES -->
-<!-- images -->
 
-[product-screenshot]: postman/.vuepress/public/images/screenshot.png
-<!-- technologies -->
-
-[Git.ico]: https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white
-
-[Git.url]: https://git-scm.com/
-
-[Node.ico]: https://img.shields.io/badge/Node-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
-
-[Node.url]: https://nodejs.org/
-
-[NPM.ico]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
-
-[NPM.url]: https://docs.npmjs.com/about-npm
-
-[Bootstrap.ico]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-
-[Bootstrap.url]: https://getbootstrap.com
-
-[Vue.ico]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=white
-
-[Vue.url]: https://vuejs.org/
-
-[Yarn.ico]: https://img.shields.io/badge/Yarn.js-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white
-
-[Yarn.url]: https://classic.yarnpkg.com/en/docs/usage
-
-<!--
+<!-- Uncomment to see badge
 [![Git][Git.ico]][Git.url]
 [![npm][NPM.ico]][NPM.url]
 [![Yarn][Yarn.ico]][Yarn.url]
@@ -213,3 +187,16 @@ compiling computer source code into binary code, packaging binary code, and runn
 [![Vue][Vue.ico]][Vue.url]
 [![Bootstrap][Bootstrap.ico]][Bootstrap.url]
 -->
+[Git.ico]: https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white
+[Git.url]: https://git-scm.com/
+[Node.ico]: https://img.shields.io/badge/Node-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
+[Node.url]: https://nodejs.org/
+[NPM.ico]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
+[NPM.url]: https://docs.npmjs.com/about-npm
+[Bootstrap.ico]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap.url]: https://getbootstrap.com
+[Vue.ico]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=white
+[Vue.url]: https://vuejs.org/
+[Yarn.ico]: https://img.shields.io/badge/Yarn.js-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white
+[Yarn.url]: https://classic.yarnpkg.com/en/docs/usage
+

@@ -52,6 +52,7 @@ _&uarr; ChatGPT_
   * [Introduction](#introduction-1)
   * [Reference Materiels](#reference-materiels)
   * [Project Definition](#project-definition)
+  * [Change Log](#change-log)
   * [Roadmap](#roadmap)
 <!-- TOC -->
 
@@ -118,6 +119,8 @@ installed on your computer:
                 |-- pom.xml
                 |------/ src
 
+
+## [Change Log](postman/CHANGELOG.md) ##
 
 ## Roadmap ##
 
