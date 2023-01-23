@@ -47,13 +47,13 @@ installed on your computer:
 **Your preferred build tool:**
 
 [![gradle][gradle]][gradle.url]
-[![mavne][maven]][maven.url]
+[![maven][maven]][maven.url]
 
 :::
 
 # Quick Start
 
-This section will help you setup get up and running quickly.
+This section will help you get up and running quickly.
 
 - **Step 1**: Clone for your project.
 
@@ -119,7 +119,9 @@ This section will help you setup get up and running quickly.
   </CodeGroupItem>
 </CodeGroup>
 
-# Vuepress v2 #
+# Documentation #
+
+<h3>Vuepress & Vue</h3>
 
 This Developer's Kit contains a Vuepress v2 project documentation site setup inside the /postman directory. Making the
 postman directory a README.md (Markdown) based documentation library. With the intent to make documenting your code
